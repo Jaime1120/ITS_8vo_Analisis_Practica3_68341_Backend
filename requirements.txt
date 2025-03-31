@@ -1,0 +1,22 @@
+# Framework principal
+fastapi
+
+# Servidor ASGI para desarrollo y producción
+uvicorn[standard]
+
+# ORM y conexión a base de datos
+sqlalchemy
+databases  # (opcional si usas SQLAlchemy clásico)
+sqlite-utils  # útil si usas SQLite
+
+# Validación y serialización
+pydantic
+
+# Seguridad y hashing de contraseñas
+passlib[bcrypt]
+
+# Autenticación con JSON Web Tokens
+PyJWT
+
+# Para cargar variables de entorno (opcional y recomendado)
+python-dotenv
