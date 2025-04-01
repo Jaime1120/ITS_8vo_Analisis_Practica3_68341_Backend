@@ -1,7 +1,7 @@
 import jwt
 from datetime import datetime, timedelta
 
-SECRET_KEY = "secret"  # ⚠️ Usa variables de entorno en producción
+SECRET_KEY = "secret"
 
 def create_token(email: str) -> str:
     payload = {
