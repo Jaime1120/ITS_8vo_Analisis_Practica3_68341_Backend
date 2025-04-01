@@ -1,5 +1,5 @@
 # Framework principal
-fastapi
+fastapi[standard]
 
 # Servidor ASGI para desarrollo y producción
 uvicorn[standard]
@@ -20,3 +20,6 @@ PyJWT
 
 # Para cargar variables de entorno (opcional y recomendado)
 python-dotenv
+
+#Por temas de compatibilidad
+bcrypt==4.0.1
