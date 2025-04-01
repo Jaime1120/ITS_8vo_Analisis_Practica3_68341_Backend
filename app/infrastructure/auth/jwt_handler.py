@@ -6,7 +6,7 @@ SECRET_KEY = "secret"
 def create_token(email: str) -> str:
     payload = {
         "sub": email,
-        "exp": datetime.utcnow() + timedelta(minutes=30)
+        "exp": datetime.utcnow() + timedelta(minutes=1)
     }
     return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
 
